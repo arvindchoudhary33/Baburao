@@ -1,1 +1,1 @@
-# Some trivial Programs.
+# SomeTrivialPrograms.
