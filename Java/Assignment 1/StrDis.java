@@ -5,3 +5,4 @@ public class StrDis{		//class declaration (same as file name)
     }
   }
 }
+/* The length function is used without parentheses while working with command line arguments. */
