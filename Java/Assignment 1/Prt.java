@@ -1,3 +1,7 @@
+// Assign-1-Program-2 
+// Write a Java program to accept principal, rate of interest and no. of years from user and calculate simple interest . 
+
+
 public class Prt{
   public static void main(String ar[]){
     float si = 0;				//intializing simple interest as si
