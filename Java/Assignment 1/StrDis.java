@@ -1,6 +1,7 @@
 // Assign-1-Program-1
 // As it is the first program  ,  if you want to know why the file name is same as the public class name 
 // https://stackoverflow.com/questions/2134784/why-are-filenames-in-java-the-same-as-the-public-class-name  ( Don't be lazy , its really helpful ).
+// It's not very  technical , the javaCreator decided to do , so they did. 
 
 // This program is in java to accept String from user and display it on console.
 
