@@ -24,7 +24,38 @@ git commit -a -m “anyMessagedYouWantToWriteInHere”   // In quotation's
 git push origin master 
 
 
-
 Done. 
+
+
+
+while removing  files you name as 
+
+example : 
+
+Assignment 1 
+php html  
+
+etc . 
+
+here you added spaces  while writing the name 
+so when  using  any command   i will give error like 
+
+if you try command : 
+
+cd Assignment 1  // This won't work 
+git rm -r Assignment 1 // This also won't work 
+
+because spaces is taken as another argument . 
+
+So use "" double quotations while  adding names specially  with spaces 
+
+
+cd "Assignment 1" // This will work 
+
+git rm -r "Assignment 1" // Surely work . 
+
+
+//This  small problems  are like  mites  eats your brain. 
+ 
 
 
