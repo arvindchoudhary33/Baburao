@@ -1,0 +1,30 @@
+ # few help full commands that might help you while working with  gitLocalRepository . 
+
+
+
+To roll back one commit-back  in gitLocally
+
+Command - 
+
+git reset --hard HEAD^  
+git push -f
+
+for me it worked , but instead it created a duplicate of it . ( because it renamed a folder and then i commited  because of that one more folder with same files  
+
+but with changed name  created , so then i have to browse and look for another command to delete a directory so  i found one )
+
+
+so i just  did this command and then deleted the duplicate directory  by  using 
+
+command ~ 
+
+git rm -r folderName 
+git status                        // ( just to check it worked ) 
+git commit -a -m “anyMessagedYouWantToWriteInHere”   // In quotation's  
+git push origin master 
+
+
+
+Done. 
+
+
