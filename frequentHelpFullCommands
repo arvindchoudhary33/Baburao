@@ -70,7 +70,18 @@ git rm -r "Assignment 1" // Surely work .
    $git checkout nameOfTheBranch 	// That's it . if you are on any branch and you want to switch just this command and the name of your branch.
 
 
+5 ~  To delete a directory  & to create a file and a folder 
+   
+   $mkdir test    	    // name the directory you want create 
+   $cd directoryName	    // changed the directory 'test'
+   $touch  test.txt         //  created a test.txt inside  'test'
+   
+   # After pushing the directory   to ,  remote  then try deleting it. 
 
+   $git rm -r test          // This command will delete the test directory  , '-r' stands for recursive .
+    
+   # And then again commit and push , in order to check . 	   
+	
 
 
 
