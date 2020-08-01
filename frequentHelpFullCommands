@@ -1,61 +1,65 @@
- # few help full commands that might help you while working with  gitLocalRepository . 
+# Some helpfull commands , while working with LocalGitRepository.
 
 
 
-To roll back one commit-back  in gitLocally
+# Commands - 
 
-Command - 
-
-git reset --hard HEAD^  
-git push -f
-
-for me it worked , but instead it created a duplicate of it . ( because it renamed a folder and then i commited  because of that one more folder with same files  
-
-but with changed name  created , so then i have to browse and look for another command to delete a directory so  i found one )
+# To roll back one commit-back  in gitLocally
+# '$' is the terminal , don't include it  while executing the commands. 
 
 
-so i just  did this command and then deleted the duplicate directory  by  using 
+1 ~ $git reset --hard HEAD^                              // If you commited something else  , you can always rollback to your previous commit, "Kudos!". 
 
-command ~ 
+# To Delete a specific Directory inside the repository. 
 
-git rm -r folderName 
-git status                        // ( just to check it worked ) 
-git commit -a -m “anyMessagedYouWantToWriteInHere”   // In quotation's  
-git push origin master 
+2 ~
 
-
-Done. 
+    $git rm -r folderName 
+    $git status                                           // ( just to check if it worked , nothing fancy ) 
+    $git commit -a -m “anyMessagedYouWantToWriteInHere”   //-a stands for all ( i think )  -m stands for  Message, and message should be in quotation's
+    $git push origin master                               // The actual magic , to make changes in remote repository. 
+                                                          // Sometimes there might be some diverging and merging errors  , that you can sort out. 
 
 
 
-while removing  files you name as 
+# Name of Files with spaces 
 
 example : 
 
-Assignment 1 
+Assignment 1
 php html  
+et cetera .  
 
-etc . 
-
-here you added spaces  while writing the name 
+When you name any directory or files don't add spaces in actual name and when you do so  , you might be doing this , 
 so when  using  any command   i will give error like 
-
-if you try command : 
 
 cd Assignment 1  // This won't work 
 git rm -r Assignment 1 // This also won't work 
 
-because spaces is taken as another argument . 
+because spaces is taken as another argument w.r.t that command in terminal . 
 
-So use "" double quotations while  adding names specially  with spaces 
-
+So use "" double quotations while  working with  names with spaces 
 
 cd "Assignment 1" // This will work 
 
 git rm -r "Assignment 1" // Surely work . 
 
+//These   small problems  are like  mites ,  eats your brain. 
 
-//This  small problems  are like  mites  eats your brain. 
+# So what will you do you ,  when you made a change  in your repository on remote on web . 
+# you see your local repository , there's no changes reflected , so to do so .
+
+3 ~ Pull Request , which is exact opposite of  "Push" . Here we are retrieving the repository from remote to our local with  all the changes .
+   // You only execute  Pull when you think there  are some changes on remote you NEED , to your local-to work upon.
+   
+   $git pull --all         // This command will retrieve  the whole repository with all the changes .
+                           // If you wish to retrieve a specific  branch and not other , there are commands to do . I haven't done that yet. 
+                           
+
+
+
+ #GoodDay.
+ . 
  
-.
+ 
 
