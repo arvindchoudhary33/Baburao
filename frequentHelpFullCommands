@@ -8,9 +8,14 @@
 # '$' is the terminal , don't include it  while executing the commands. 
 
 
+
+
+
 1 ~ $git reset --hard HEAD^                              // If you commited something else  , you can always rollback to your previous commit, "Kudos!". 
 
 # To Delete a specific Directory inside the repository. 
+
+
 
 2 ~
 
@@ -49,6 +54,9 @@ git rm -r "Assignment 1" // Surely work .
 # So what will you do you ,  when you made a change  in your repository on remote on web . 
 # you see your local repository , there's no changes reflected , so to do so .
 
+
+
+
 3 ~ Pull Request , which is exact opposite of  "Push" . Here we are retrieving the repository from remote to our local with  all the changes .
    // You only execute  Pull when you think there  are some changes on remote you NEED , to your local-to work upon.
    
@@ -58,8 +66,7 @@ git rm -r "Assignment 1" // Surely work .
 
 
 
- #GoodDay.
- . 
+ #GoodDay. 
  
  
 
