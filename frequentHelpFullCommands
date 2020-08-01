@@ -64,6 +64,14 @@ git rm -r "Assignment 1" // Surely work .
                            // If you wish to retrieve a specific  branch and not other , there are commands to do . I haven't done that yet. 
                            
 
+4 ~ switching between branches 
+	
+   $git status  			// Just to check were you are now 
+   $git checkout nameOfTheBranch 	// That's it . if you are on any branch and you want to switch just this command and the name of your branch.
+
+
+
+
 
 
  #GoodDay. 
