@@ -72,11 +72,11 @@ git rm -r "Assignment 1" // Surely work .
 
 5 ~  To delete a directory  & to create a file and a folder 
    
-   $mkdir test    	    // name the directory you want create 
-   $cd directoryName	    // changed the directory 'test'
-   $touch  test.txt         //  created a test.txt inside  'test'
+   $mkdir test    	    // name the directory you want to create 
+   $cd directoryName	    // changed to  directory 'test'
+   $touch  test.txt         //  created a test.txt inside  'test' directory 
    
-   # After pushing the directory   to ,  remote  then try deleting it. 
+   # After pushing the directory to remote ,  then try deleting it. 
 
    $git rm -r test          // This command will delete the test directory  , '-r' stands for recursive .
     
