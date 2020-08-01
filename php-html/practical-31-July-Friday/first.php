@@ -1,11 +1,15 @@
 
 <html>
-<head><title>SimpleInterest</title></head>
+<head>
+	<title>SimpleInterest</title>
+</head>
+
 <body bgcolor="beige">
 
 	<h1 align="center"> Calculate Simple Interest-Program-1st </h1>
 
 <form method ="POST" >
+	
 
 	Principle :<input type ="text" name="prin"><br><br>
 	Rate      : &nbsp;&nbsp; &nbsp;&nbsp;  <input type ="text" name="rate"><br><br>
@@ -15,36 +19,26 @@
 
  <br><br><input type="submit">
 
-
-
-
-
 </form>
+			<?php 
+
+			  
+			$pr = $_POST["prin"];
+			$r = $_POST["rate"];
+			$t  = $_POST["time"];
 
 
+			echo"<br> Principle is : ",$pr;
+			echo"<br> Rate is : ",$r;
 
-<?php 
-
-  
-$pr = $_POST["prin"];
-$r = $_POST["rate"];
-$t  = $_POST["time"];
+			echo"<br> Time is : ",$t;
 
 
-echo"<br> Principle is : ",$pr;
-echo"<br> Rate is : ",$r;
+			$si = ($pr * $t * $r)/100;
 
-echo"<br> Time is : ",$t;
+			echo"<br> SimpleInterest  is : ",$si;
 
-
-$si = ($pr * $t * $r)/100;
-
-echo"<br> SimpleInterest  is : ",$si;
-
-
-
-
-?> 
+			?> 
 </body>
 </html>
 
