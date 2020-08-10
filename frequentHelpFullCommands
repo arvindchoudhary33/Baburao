@@ -63,7 +63,7 @@ git rm -r "Assignment 1" // Surely work .
 3 ~ Pull Request , which is exact opposite of  "Push" . Here we are retrieving the repository from remote to our local with  all the changes .
    // You only execute  Pull when you think there  are some changes on remote you NEED , to your local-to work upon.
    
-   $git pull --all         // This command will retrieve  the whole repository with all the changes .
+   $git pull --all         // This command will retrieve  the whole repository with all the changes , * while using command in the terminal make sure you are in your  repository.
                            // If you wish to retrieve a specific  branch and not other , there are commands to do . I haven't done that yet. 
                            
 
