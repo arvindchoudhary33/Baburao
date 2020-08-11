@@ -1,5 +1,10 @@
 # Some helpful  commands , while working with LocalGitRepository.
+# You should Read "  HitchHikers Guide To Galaxy "   , Por Que  , PorQue  es divertido!!!!.
 
+# Sorry , Where were we ? .  Ha  Commands !.
+
+
+# So see these are commands , That's cool. 
 
 
 # Commands - 
@@ -23,7 +28,7 @@
     $git rm -r folderName 
     $git status                                           // ( just to check if it worked , nothing fancy ) 
     $git commit -a -m “anyMessagedYouWantToWriteInHere”   //-a stands for all ( i think )  -m stands for  Message, and message should be in double quotation's
-    $git push origin master                               // The actual magic , to make changes in remote repository. 
+    $git push origin master                               // The actual magic , to make changes to remote repository. 
                                                           // Sometimes there might be some diverging and merging errors  , that you can sort out. 
 
 
