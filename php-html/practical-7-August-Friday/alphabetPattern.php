@@ -28,12 +28,12 @@
 						// Like in this  range('A','Z') returns an array ( value ) like 0 , 1 ,2 ,3 each  with a value . 0 = A , 1 = B and so on.
 
 						// So to manually control our program pattern size  , user can  enter a range which we used in our outer-for-loop .
-						// The same program for small alphabets , just replace 'A' to 'a' & 'Z' to 'z'
+						// The same program for to display little little  alphabets , just replace 'A' to 'a' & 'Z' to 'z' in range() function.
 
 
 
 
-						for($i=0; $i<$userRange; $i++){ 
+						for($i=0; $i<$userRange; $i++){  
 
 						  for($j=0; $j<=$i; $j++){  
 

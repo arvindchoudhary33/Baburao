@@ -9,11 +9,9 @@
 
 # Commands - 
 
-# To roll back one commit-back  in gitLocally
 # '$' is the terminal , don't include it  while executing the commands. 
 
-
-
+# To roll back one commit-back  in gitLocally
 
 
 1 ~ $git reset --hard HEAD^                              // If you committed something else you didn't wanted to  , you can always rollback to your previous commit, "Kudos!". 
@@ -42,7 +40,7 @@ php html
 et cetera .  
 
 When you name any directory or files don't add spaces in actual name and when you do so  , you might be doing this , 
-so when  using  any command   i will give error like 
+so when  using  any command  , it will display error ,  
 
 cd Assignment 1  // This won't work 
 git rm -r Assignment 1 // This also won't work 
@@ -80,11 +78,11 @@ git rm -r "Assignment 1" // Surely work .
 
 5 ~  To delete a directory  & to create a file and a directory ( folder ) 
    
-   $mkdir test    	    // name the directory you want to create 
+   $mkdir directoryName     // name the directory you want to create 
    $cd directoryName	    // changed to  directory 'test'
    $touch  test.txt         //  created a test.txt inside  'test' directory 
    
-   # After pushing the directory to remote ,  then try deleting it. 
+   # After pushing the directory on remote ,  then try deleting it. 
 
    $git rm -r test          // This command will delete the test directory  , '-r' stands for recursive .
     
