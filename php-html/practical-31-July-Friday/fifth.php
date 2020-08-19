@@ -8,7 +8,7 @@
 <body>
 
 	<h1> 
-		character Checker 
+		character Checker ~ 
 	</h1>
 
 <div>
@@ -55,7 +55,7 @@
 			}
 
 			else  if($value == 32){
-				echo"Hey , lazy person. Enter a looking Character."; // If user enters a space and clicks the button. ( he is lazy , i don't know)
+				echo"Hey , lazy person. Enter a visible Character."; // If user enters a space and clicks the button. ( he is lazy , i don't know)
 
 				}
 
