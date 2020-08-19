@@ -2,22 +2,35 @@
 <html>
 <head>
 		<title>characterChecker</title>
-</head>
-<body bgcolor="beige">
+		<link rel="stylesheet"  type="text/css" href="external.css">
 
-	<h1 align="center"> characterChecker-5th-Program </h1>
+</head>
+<body>
+
+	<h1> 
+		character Checker 
+	</h1>
+
+<div>
 
 <form method ="POST" >
 
-	EnterA_Character :<input type ="text" name="ch"><br><br>
+	Enter a Character :<input type ="text" name="ch" class="textField"><br>
 
+	<input type="submit">
 
-
- <br><br><input type="submit">
 </form> 
 
-			<?php 
+
+</div><br>
+		<?php 
 			  
+			echo"<div class=\"div php \">"; // just for styling purpose ( ignore )
+			error_reporting (E_ALL ^ E_NOTICE); // To understand this line of code , open first.php.
+
+
+
+
 			$char = $_POST["ch"];
 
 			$value = ord($char);
@@ -36,13 +49,26 @@
 				echo"Number hai!!";
 			}
 
-			else{
-
+			else if(($value >= 33 && $value <= 47) || ($value >= 58 && $value <= 64 ) || ($value >= 91 && $value <= 96) || ($value >=123 && $value <= 126)){
 				echo"It's a outOfWorldCharacter , I mean special.";
+
 			}
 
+			else  if($value == 32){
+				echo"Hey , lazy person. Enter a looking Character."; // If user enters a space and clicks the button. ( he is lazy , i don't know)
 
-			?> 
+				}
+
+			else{
+
+				echo"No Input ";
+			}
+
+		
+
+			echo"</div>";
+
+		?> 
 
 </body>
 </html>
