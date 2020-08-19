@@ -21,5 +21,6 @@ public class longestStr{
       }
     }
     System.out.println("Maximum length of string is "+maxlen+" and the string is "+s[idx]);
+    in.close();
   }
 }
