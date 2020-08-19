@@ -7,7 +7,7 @@
 
 <body>
 
-	<h1 align="center"> Calculate Simple Interest ~ <br><br><br></h1>
+	<h1>  Calculate Simple Interest ~ <br><br><br></h1>
 <div>
 <form method ="POST" >
 	

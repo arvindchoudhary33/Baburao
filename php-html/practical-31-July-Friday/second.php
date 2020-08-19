@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<h1 align="center">Calculate AreaOfCirle ~<br><br></h1>
+	<h1>Calculate AreaOfCirle ~<br><br></h1>
 <div>
 <form method ="POST" >
 
