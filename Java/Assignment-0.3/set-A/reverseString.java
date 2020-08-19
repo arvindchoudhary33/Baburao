@@ -1,7 +1,7 @@
 //Ass-3 Set-A Q2
 // 2.	Write a java program to print reverse of the String.
 
-public class ReverseStr{
+public class reverseString{
   public static void main(String ar[]){
     String rev = "";                                                //creating an empty string where we would store the reverse of the string
     String str=new String("Alpenlible");                            //creating instance of String class
