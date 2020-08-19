@@ -2,23 +2,41 @@
 <html>
 <head>
 	<title>DivisibilityOf5</title>
-</head>
-<body bgcolor="beige">
+	<link rel="stylesheet"  type="text/css" href="external.css">
 
-	<h1 align="center"> ToCheckAnumberIsDivisbleBy5OrNot-3rd-Program </h1>
+
+
+</head>
+<body>
+
+	<h1> 
+		To Check aNumber is Divisble by 50  or not
+
+	</h1><br><br>
+
+
+<div>
 
 <form method="POST">
 
-	Number :<input type ="text" name="num"><br><br>
+	Number :<input type =number name="num" class="numberTextField"><br>
 
  <br><br><input type="submit">
 
 </form>
 
+</div><br><br>
+
 
 			<?php 
-			  
-			//ThirdProgram 
+
+
+			error_reporting (E_ALL ^ E_NOTICE);
+			// To understand this line of code open first.php
+
+
+
+			echo"<div class=\"div php\">"; 
 			$number = $_POST["num"];
 
 			if($number % 5 == 0)
@@ -35,10 +53,12 @@
 					echo"not by 10.";
 				}
 			}
-			else
+			else 
 			{
 				echo"Not divisible by 5 . ";
 			}
+
+			echo"</div>";
 
 			?> 
 
