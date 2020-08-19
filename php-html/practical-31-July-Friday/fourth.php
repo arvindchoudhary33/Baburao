@@ -1,7 +1,7 @@
 
 <html>
 <head>
-	<title>gradeCalculator</title>
+	<title>gradeCalculator ~</title>
 		<link rel="stylesheet"  type="text/css" href="external.css">
 
 </head>

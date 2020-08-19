@@ -10,7 +10,7 @@
 <body>
 
 	<h1> 
-		To Check aNumber is Divisble by 5O or not
+		To Check aNumber is Divisble by 50  or not
 
 	</h1><br><br>
 
@@ -53,7 +53,7 @@
 					echo"not by 10.";
 				}
 			}
-			else
+			else 
 			{
 				echo"Not divisible by 5 . ";
 			}

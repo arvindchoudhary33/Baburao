@@ -1,7 +1,7 @@
 
 <html>
 <head>
-	<title>SimpleInterest</title>
+	<title>SimpleInterest ~</title>
 	<link rel="stylesheet"  type="text/css" href="external.css">
 </head>
 
