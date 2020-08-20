@@ -1,24 +1,27 @@
 <html>
 <head>
 	<title>Alphabet Pattern</title>
+	<link rel="stylesheet" type="text/css" href="external.css">
 </head>
-<body bgcolor="beige">
+<body>
 
-  			<h1 align="center">Alphabet Pattern</h1>
+  			<h1 >Alphabet Pattern</h1><br>
+  			<div>
 				<form method ="POST" >
 
-					Enter The Size of the Pattern (1-26) : &nbsp; <input type ="text" name="txtNumber">	<br><br>
+					Enter The Size of the Pattern (1-26) : <input type =number  name="txtNumber" class="numberTextField">	<br><br>
 									
-
-					
-					<input type="submit">
+					<input type="submit" value="Show">
 				</form>
 
-
+			</div><br><br>
 
 <?php
 
-		
+			error_reporting (E_ALL ^ E_NOTICE); // to understand this line of code , check firstNumberCheck.php or remove this line and check.
+
+			echo "<div class=\"div php\">"; // just for  styling purpose (i gnore )
+
 					$userRange = $_POST["txtNumber"];
 			
 						$alpha = range('A', 'Z');  
@@ -42,7 +45,7 @@
 						    echo "<br>";  
 						}
 	    
-
+			echo "</div>";
 
 ?>
 
