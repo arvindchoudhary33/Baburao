@@ -1,7 +1,7 @@
 //Ass-3 set-A Q1
 
 import java.util.Scanner;                                         //Scanner class is used take input from user
-public class longestStr{
+public class longestString{
   public static void main(String ar[]){
     int n; String s[]=new String[10];                             //Creating an empty string array
     Scanner in= new Scanner(System.in);                           //Scanner class instance created
@@ -21,5 +21,6 @@ public class longestStr{
       }
     }
     System.out.println("Maximum length of string is "+maxlen+" and the string is "+s[idx]);
+    in.close();
   }
 }
