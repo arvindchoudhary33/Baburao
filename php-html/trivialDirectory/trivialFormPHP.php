@@ -1,6 +1,8 @@
 <?php
-  /* haha I was trying to comment outside of <?php  , I got furious why doesn't it work , but you know  , now i know  , I know , I know
+  /* haha I was trying to comment outside of <?php  , I got furious why it's not working , but you know  , now i know  , I know , I know
   	yeeeee yeeeeeeeeee.
+	
+	Ok Back to program. Enough of fun. 
   */
 
 $name = $_POST["txtname"]; // These all inside the POST are the values we retrieve from our HTML form.
