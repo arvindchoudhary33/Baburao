@@ -27,7 +27,7 @@ class Player{
   }
 
   public void PutData(){
-    System.out.println(jerNo+"\t"+name+"\t"+runs+"\t"+inn+"\t"+notOut+"\t Average runs: "+(runs/inn));
+    System.out.println(" Jersy Number : "+jerNo+"\n Player Name : "+name+"\n Player Runs : "+runs+"\n Player Innings : "+inn+"\n Player Not Out For : "+notOut+" matches");
   }
 
   public String getName(){
@@ -80,6 +80,7 @@ public class CricPlay{
   }
 
   public static void getAverageRuns(Player player){
+    player.PutData();
     System.out.println("Average Runs By "+player.getName()+" are : "+(player.getRuns()/player.getInnings_played()));
   }
 
