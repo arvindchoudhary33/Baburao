@@ -14,8 +14,9 @@ class Player{
   public void GetData(){
     System.out.println("Enter Jersey number: ");
     jerNo = input.nextInt();
+    input.nextLine();
     System.out.println("Enter Player's name: ");
-    name = input.next();
+    name = input.nextLine();
     System.out.println("Enter runs: ");
     runs = input.nextInt();
     System.out.println("Enter innings played: ");
