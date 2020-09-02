@@ -49,6 +49,10 @@ class Player{
   public static int getTotalRuns(){
     return totalRuns;
   }
+
+  public int getJerNo(){
+    return jerNo;
+  }
 }
 
 public class CricPlay{
@@ -67,9 +71,9 @@ public class CricPlay{
                 System.out.println("Enter details of player : ");
                 players[Player.getTotalPlayers()].GetData();
                 break;
-        case 2 : System.out.println("Enter The Player Whose Average We Want : ");
+        case 2 : System.out.println("Enter The Player Jersy Number Whose Average We Want : ");
                 playerNo = input.nextInt();
-                getAverageRuns(players[playerNo]);
+                getAverageRuns(playerNo,players);
                 break;
         case 3 : getAverageRuns();
                 break;
@@ -79,9 +83,19 @@ public class CricPlay{
     input.close();
   }
 
-  public static void getAverageRuns(Player player){
-    player.PutData();
-    System.out.println("Average Runs By "+player.getName()+" are : "+(player.getRuns()/player.getInnings_played()));
+  public static void getAverageRuns(int playerNo , Player[] players){
+    Player playerFound = null;
+    for(int i = 0 ; i < Player.getTotalPlayers() ; i++){
+      if(players[i].getJerNo() == playerNo)
+        playerFound = players[i];
+    }
+    if(playerFound == null){
+      System.out.println("The Player With The Jersy Number "+playerNo+" Not Found");
+    }
+    else{
+      playerFound.PutData();
+      System.out.println("Average Runs By "+playerFound.getName()+" are : "+(playerFound.getRuns()/playerFound.getInnings_played()));
+    }
   }
 
   public static void getAverageRuns(){
