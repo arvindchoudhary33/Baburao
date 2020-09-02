@@ -3,6 +3,7 @@ import java.util.Scanner;
 class Player{
   private static int totalRuns=0 ;
   private static int totalPlayers=0;
+  private static int totalInnings = 0;
   private int jerNo; 
   private String name; 
   private int runs;
@@ -24,6 +25,7 @@ class Player{
     System.out.println("Enter number of times not out: ");
     notOut = input.nextInt();
     totalRuns += runs;
+    totalInnings += inn;
     totalPlayers++;
   }
 
@@ -49,6 +51,10 @@ class Player{
 
   public static int getTotalRuns(){
     return totalRuns;
+  }
+
+  public static int getTotalInnings(){
+    return totalInnings;
   }
 
   public int getJerNo(){
@@ -100,6 +106,6 @@ public class CricPlay{
   }
 
   public static void getAverageRuns(){
-    System.out.println("Average Runs By The Team Are : " + (Player.getTotalRuns() / Player.getTotalPlayers()));
+    System.out.println("Average Runs By The Team Are : " + (Player.getTotalRuns() / Player.getTotalInnings()));
   }
 }
