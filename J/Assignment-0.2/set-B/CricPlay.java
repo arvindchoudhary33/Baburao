@@ -91,7 +91,6 @@ public class CricPlay{
                 break;
         case 3 :  for(int i = 0 ; i < Player.getTotalPlayers() ; i++){
                     System.out.println("Details Player "+(i+1)+" : ");
-                    players[i].PutData();
                   }
                 break;
         case 4 : System.out.println("Enter The Player Jersy Number Whose Average You Want : ");
@@ -109,8 +108,7 @@ public class CricPlay{
   public static Player findPlayer(int jersyNumber , Player[] players){
       for(int i = 0 ; i < Player.getTotalPlayers() ; i++){
         if(players[i].getJerNo() == jersyNumber){
-          return players[i];
-        }
+           return players[i];        }
       }
       System.out.println("The Player With The Jersy Number "+jersyNumber+" Not Found");
       return null;
