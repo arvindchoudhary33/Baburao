@@ -7,9 +7,9 @@
 
 
 public class StrDis{		//class declaration (same as file name)
-  public static void main(String ar[]){		//main function declaration
-    for(int i=0;i<ar.length;i++){		//accepting arguments from console
-        System.out.print(ar[i]+" ");		//printing arguments (a string as sequence of characters)
+  public static void main(String ninjaHattori[]){		//main function declaration
+    for(int i=0;i<ninjaHattori.length;i++){		//accepting arguments from console
+        System.out.print(ninjaHattori[i]+" ");		//printing arguments (a string as sequence of characters)
     }
   }
 }
