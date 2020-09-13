@@ -82,16 +82,17 @@ class studentDetails{
 
 		function getTotalPercentage(){
 
-			$percentage = ( $this->getSumOfAllSubjectMarks() )/3;
+			$percentage = (( $this->getSumOfAllSubjectMarks() )/300)*100;
 			return $percentage;
 		}
 
 
 		function __destruct(){ 
-			echo"<br><br><div>You are in DestructMethod to display and destroy the created Object.<br><br>";
+			echo"<br><br><div>You are in DestructMethod to display and destroy the created Object.";
+			echo"And you are a BadPerson :(<br><br> ";
 			$getSum = $this->getSumOfAllSubjectMarks();
 			$getPercentage = $this->getTotalPercentage();
-			echo"Student Name : ".$this->name."<br>python Marks : ".$this->pythonMarks."<br>rattleSnakeMarks : ".$this->rattleSnakeMarks."<br>naggoBa Marks : ".$this->naagoBaMarks."</div>";
+			echo"Student Name : ".$this->name."<br>python Marks : ".$this->pythonMarks."<br>rattleSnakeMarks : ".$this->rattleSnakeMarks."<br>naggoBa Marks : ".$this->naagoBaMarks."<br>Total Marks : ".$getSum."<br>Total Percentage :".$getPercentage."%</div>";
 
 
 			
