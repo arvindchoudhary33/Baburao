@@ -39,13 +39,12 @@
 			// to better  understand ,  read from the link provided
 
 			if($_POST["empName"] != NULL ){// To avoid printing any default values before feeding any values in our input box.
+			echo"<div class=\"div php\">"; // For Desiging Purpose , Ignore.
 
-
-
-
-
-		echo"<div class=\"div php\">"; // For Desiging Purpose , Ignore.
-
+				
+				
+				
+				
 
 
 		class Employee { // You can name  the class as --  "Employee" or "employee" both are vaild in php. 
@@ -53,7 +52,7 @@
 
 			// Always try to set Class Property( i.e Variables ) to private . ( Considered as good Practise and "Really" useful)
 			private $name ;
-		    private $designation ;
+		        private $designation ;
 			private $salary ;
 
 

@@ -31,32 +31,22 @@
 
 			error_reporting (E_ALL ^ E_NOTICE);
 			//  “Notice: Undefined index”  
-			//  https://www.stechies.com/undefined-index-error-php/
-			// This error means that within your code, there is a variable or constant that has no value assigned to it. 
-			// But you may be trying to use the values obtained through the user form in your PHP code
-
-			// You can also use  like ~   isset($_POST["prin"]);  to each  value obtained from HTML form.
-			// to better  understand ,  read from the link provided
-
 			// This "Notice" commonly occures when you use html and php in same file. As this is.
 
 
 			if($_POST["rectangleLength"] != NULL ){// To avoid printing any default values before feeding any values in our html input.
 				 								// Try to practise  such things in your code. 
+			echo"<div>"; // For Desiging Purpose , Ignore.
 
 
 
-		echo"<div>"; // For Desiging Purpose , Ignore.
+	class areaOfRectangle { // You can name  the class as --  "AreaOfCircle" or "areaOfCircle" both are vaild in php. 
 
 
-
-		class areaOfRectangle { // You can name  the class as --  "AreaOfCircle" or "areaOfCircle" both are vaild in php. 
-
-
-			// Always try to set Class Property( i.e Variables ) to private . ( Considered as good Practise and "Really" useful)
-			private $length ;
-		    private $breadth ;
-		    private $area;
+			   // Always try to set Class Property( i.e Variables ) to private . ( Considered as good Practise and "Really" useful)
+			    private $length ;
+			    private $breadth ;
+			    private $area;
 
 
 			 function __construct(){ 
@@ -64,32 +54,23 @@
 			      $this->length = $_POST["rectangleLength"];
 			      $this->breadth = $_POST["rectangleBreadth"];
 			      $this->area = $this->calculateAreaOfRectangle();
-
-
-			 
 			 }
-
-
-			  
-
-
+			
 			 function calculateAreaOfRectangle(){ 
 
 			 	$onlyThisMethodScopeArea =($this->length * $this->breadth );
 			 	return $onlyThisMethodScopeArea;  // This return value is used by our construct method and stored in our class property( i.e variable )
 			 									  // $area . Now this $area is used in our destructor to  display the area. 
-			 	
-			 }
+			  }
 
 			 function __destruct(){ 
 			 	echo"<br><div>Hey , constructor 'Thanks for addressing'<br>";
-
-			 	echo "<br>Area of Rectangle with Length and Breadth( ".$this->length ." , ".$this->breadth." ) is :  ".$this->area."</div>";
-
-
+				echo "<br>Area of Rectangle with Length and Breadth( ".$this->length ." , ".$this->breadth." ) is :  ".$this->area."</div>";
 			 }
 			
-		}// closing brace of the areaOfCircle Class
+			
+			
+	 }// closing brace of the areaOfCircle Class
 
 
   $calculateArea = new areaOfRectangle();  //  Creating object of our Class Circle 
