@@ -62,7 +62,7 @@ class studentDetails{
 
 
 
-		function __construct($name , $pythonMarks , $rattleSnakeMarks , $naagoBaMarks){ //  This method will set our Class Property ( i.e Variables ) 
+		function __construct($name , $pythonMarks , $rattleSnakeMarks , $naagoBaMarks){ //  This is a PHP constructor and will set our Class Property ( i.e Variables ) 
 																					 //   to the values we passed in our html form.
 			echo"Hello , you are in ConstructMethod to set all the values retrieved from HTML Form to Class Property (i.e  Variables) ";
 			$this->name = $name ;
