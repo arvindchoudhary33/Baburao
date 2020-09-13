@@ -39,30 +39,16 @@
 			// Just to avoid a notice message ,using the below line of code . ( if you know then ignore )
 			// remove this line and  observe the error.
 			error_reporting (E_ALL ^ E_NOTICE);
-			//  “Notice: Undefined index”  
-			//  https://www.stechies.com/undefined-index-error-php/
-			// This error means that within your code, there is a variable or constant that has no value assigned to it. 
-			// But you may be trying to use the values obtained through the user form in your PHP code
-
-			// You can also use  like ~   isset($_POST["prin"]);  to each  value obtained from HTML form.
-			// If you haven't understood ,  read from the  above link provided.
 
 
-
-			// Just to avoid a notice message ,so using the below line of code . ( if you know then ignore )
-
-
-
-			
-
-
-if($_POST["num1"] != NULL){ // We don't want our  switch case to print any default value 
+		if($_POST["num1"] != NULL){		  // We don't want our  switch case to print any default value 
 					  // I used $num1 which is the name of our first inputBox ( to make it look simple ) ,
 					  // you can use  $_POST or anyOther way to avoid it.
 
 		echo"<br><br><div class=\"div php\">";
 
 
+			
 class arithmeticOperations{
 
 
