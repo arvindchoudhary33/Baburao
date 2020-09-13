@@ -97,8 +97,8 @@ class studentDetails{
 
     $studentObject = new studentDetails($_POST["studentName"] , $_POST["pythonMarks"] , $_POST["rattleSnakeMarks"] , $_POST["naagoBaMarks"] );
 
-    // If you want to check if the object is destroyed or not by the Destructor , use the below way.
-    //  // This will return 1 for True  and Viceversa.
+    // If you want to check if the object is destroyed or not ,  by the Destructor , use the below way.
+    // echo is_object($studentObject);  //  This will return 1 for True  and Viceversa.
 
 
   echo"</div>";
