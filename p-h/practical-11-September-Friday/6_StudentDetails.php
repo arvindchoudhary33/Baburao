@@ -14,17 +14,13 @@
 			 	Student Name : <input type=text  name="studentName" class="numberTextField" placeholder="Enter the name..."><br><br>
 			 	Python Marks : <input type=number  name="pythonMarks" class="numberTextField" placeholder="Enter marks..."><br><br>
 			 	rattleSnake Marks: <input type=number  name="rattleSnakeMarks" class="numberTextField" placeholder="Enter marks..."><br><br>
-			 	NaagoBa Marks : <input type=number  name="naagoBaMarks" class="numberTextField" placeholder="Enter marks..."><br><br>
-
-
+			 	NaagoBa Marks : <input type=number  name="naagoBaMarks" class="numberTextField" placeholder="Enter marks..."><br><br
 			 
 	
-			<input type="submit" value="Show Details"> <br>
+			       <input type="submit" value="Show Details"> <br>
 
 	</form>
-
-
-					</div>
+	</div>
 
 
 
@@ -40,13 +36,11 @@
 
 
 
-if($_POST["studentName"] != NULL){  // We don't want our  switch case to print any default value 
-							        // I used $studentName which is the name of our first inputBox ( to make it look simple ) ,
-							        // you can also use   $_POST or anyOther way to avoid it.
+if($_POST["studentName"] != NULL){ 	 // We don't want our  switch case to print any default value 
+					 // I used $studentName which is the name of our first inputBox ( to make it look simple ) ,
+					 // you can also use   $_POST or anyOther way to avoid it.
 
 echo"<br><br><div class=\"div php\">";
-
-
 
 
 
@@ -63,7 +57,7 @@ class studentDetails{
 
 
 		function __construct($name , $pythonMarks , $rattleSnakeMarks , $naagoBaMarks){ //  This is a PHP constructor and will set our Class Property ( i.e Variables ) 
-																					 //   to the values we passed in our html form.
+		// This is an example of parameterized Constructor in php.																 //   to the values we passed in our html form.
 			echo"Hello , you are in ConstructMethod to set all the values retrieved from HTML Form to Class Property (i.e  Variables) ";
 			$this->name = $name ;
 			$this->pythonMarks = $pythonMarks; 
@@ -99,7 +93,7 @@ class studentDetails{
 		}		
 
 
-} // closing brace of the clas
+} // closing brace of the class
 
     $studentObject = new studentDetails($_POST["studentName"] , $_POST["pythonMarks"] , $_POST["rattleSnakeMarks"] , $_POST["naagoBaMarks"] );
 
