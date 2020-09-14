@@ -8,12 +8,12 @@ class Student{
     public Student(String name , int rollNo , int age , String course){
         Checker checker = new Checker();
         try{
-        checker.check(name);
-        checker.check(age);
-        this.name = name ;
-        this.age = age;
-        this.rollNo = rollNo;
-        this.course = course ;
+            checker.check(name);
+            checker.check(age);
+            this.name = name ;
+            this.age = age;
+            this.rollNo = rollNo;
+            this.course = course ;
         }
         catch(NameNotValidException e){
             e.print();
