@@ -49,7 +49,7 @@ class SCC implements CreditCardInterface{
         }
         else{
             System.out.println("\nThe Card Number is Invalid !");
-            System.exit(0); // Using this line of code because else the program will ask for other entries
+            System.exit(0); // This line of code because else the program will ask for other entries
                             // even though you entered card number invalid.
                             // System.exit(0) terminates  java program from any where you want.
                             // And return; statements just returns the control to the calling function.
@@ -87,7 +87,7 @@ class SCC implements CreditCardInterface{
     public void payCredit(){
         
         Scanner userInput =  new Scanner(System.in);
-        System.out.println("Paise de Bank ko , jo karch kyee creditCard se :");
+        System.out.println("Paise de Bank ko , jo kharch kyee creditCard se :");
         amount = userInput.nextInt();
         if((amount - creditAmount) <= creditLimit){
             creditAmount = creditAmount - amount;
@@ -146,7 +146,7 @@ class GCC implements CreditCardInterface{
     
     
     public void useCard(){
-        System.out.println("\nEnter amount for new purchases :");
+        System.out.println("\nEnter amount for new purchase:");
         Scanner userInput = new Scanner(System.in);
         amount = userInput.nextInt();
         
@@ -160,7 +160,7 @@ class GCC implements CreditCardInterface{
     
     
     public void payCredit(){
-        System.out.println("\nPaise de Bank ko , jo karch kyee creditCard se :");
+        System.out.println("\nPaise de Bank ko , jo kharch kyee creditCard se :");
         Scanner userInput = new Scanner(System.in);
         amount = userInput.nextInt();
         
@@ -178,7 +178,7 @@ class GCC implements CreditCardInterface{
         int amount = userInput.nextInt();
         
         if(amount > 5000 ){
-            System.out.println("Amount cannot be exceed 5000 .");
+            System.out.println("Amount cannot  exceed 5000 .");
         }
         else
             creditLimit = creditLimit + amount;
