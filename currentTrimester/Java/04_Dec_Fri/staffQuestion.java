@@ -1,5 +1,5 @@
 /*
-
+ 
 Define an abstract class “Staff” with members name and address. 
 Define two sub-classes of this class – 
 “FullTimeStaff” (department, salary) and “PartTimeStaff” (number-of-hours, rate-perhour). 
