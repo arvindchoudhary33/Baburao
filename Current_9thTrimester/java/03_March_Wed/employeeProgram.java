@@ -19,7 +19,7 @@ class  employeeProgram{
 			// The following URL written below  works for me. It might be different at your side.
 			// Am using XAMPP ( myphpadmin ) to create db's.
 			Connection con = DriverManager.getConnection("jdbc:mysql://192.168.64.3/shaun", "shaun",     "root");
-			//											    	       "URL"	     db		UserName	Password			
+			//						 	 "URL"	    	 db	 UserName.   Password			
 			// step 4 : Create the statement 
 			//A Statement is an interface that represents a SQL statement. 
 			//You execute Statement objects, and they generate ResultSet objects, 
