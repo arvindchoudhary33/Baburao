@@ -20,7 +20,7 @@ class  employeeProgram{
 			// Am using XAMPP ( myphpadmin ) to create db's.
 			//Registering the Driver using DriverManager
 			Connection con = DriverManager.getConnection("jdbc:mysql://192.168.64.3/shaun", "shaun",     "root");
-			//						 	 "URL"	    	 db	 UserName.   Password			
+			//											    	       "URL"	     db		UserName	Password			
 			// step 4 : Create the statement 
 			//A Statement is an interface that represents a SQL statement. 
 			//You execute Statement objects, and they generate ResultSet objects, 
