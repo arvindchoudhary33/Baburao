@@ -1,0 +1,31 @@
+
+
+.home-body{
+position:relative;
+   height:100%;
+   width:100%
+}
+h1{
+   font-size: 5rem;
+}
+.footer{
+    width:100%;
+    position:absolute;
+    display:block;
+    bottom:0vh;
+    background:#7F90A3;
+    font-size: 1rem;
+    color:#969188;
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+   h1{
+      font-size: 10rem;
+   }
+    .footer{
+       font-size:1rem;
+    }
+    }

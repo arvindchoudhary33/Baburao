@@ -1,0 +1,248 @@
+/* Done first for  mobile device  , rest are in media queries */
+.body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.logo{
+	position:absolute;
+	top:5px;
+	color:var(--blackColor);
+	font-size:2rem;
+	z-index: 1;
+}
+
+
+.main-container{
+		position:absolute;
+		display:flex;
+		top:50px;
+		justify-content:center;
+		align-items:center;
+		z-index:11;
+		height:400px;
+		width:90%;
+		background-color:var(--whiteColor);
+		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;	}
+
+	.form-container{
+	    position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		top:0;
+		width:90%;
+		height:100%;
+		overflow:hidden;
+	}
+
+
+	.label-container{
+		position:relative;
+		height:9%;
+		width:85%;
+		padding-bottom: 5px;
+		top:-28%;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		border-radius:10px;
+		overflow:hidden;
+		z-index:1;
+		margin-left: 10px;
+		margin-right:10px;
+		font-size: 1.10rem;
+	}
+	.slide-tab{ 
+		position:absolute;
+		height:100%;
+		width:50%;
+		background: var(--defaultThemeColor);
+		right:0;
+		border-radius:1px;
+		border-style: none;
+		color:var(--whiteColor);
+	}
+
+
+ 	.slide{
+		cursor: pointer;
+		z-index: 2;
+		color:#14213D;
+		width:47%;
+	}
+	.sign{
+		text-align: center;
+		color:#ffffff;
+		z-index:2;
+		padding-right:10px;
+		padding-top: 8px; 
+	}
+
+	.log{
+		text-align: center;
+		padding-left:10px;
+		padding-top: 8px;
+	}
+
+
+	#radio-login:checked ~ .slide-tab{
+			left:0;		
+	}
+	#radio-login:checked ~ .log{
+			color:#ffffff;
+	}
+	#radio-login:checked ~ .sign{
+			color:#14213D;
+	}
+	input[type='radio']{
+			display:none;
+	}
+
+	
+	.sub-form-container{
+		position:absolute;
+		display:flex;
+		top:30%;
+		height:60%;
+		width:100%;
+		justify-content: space-evenly;
+		box-shadow: none;
+	}
+	/* Button */
+	#standard-basic{
+		margin-top:10px;
+		font-size:18px;
+	}
+	.signup{
+		position:absolute;
+		height:90%;
+		width:100%;
+		top:7px;
+		display:flex;
+		flex-direction: column;
+		justify-content:space-around;	
+	}
+
+	.login{
+		position:absolute;
+		top:10px;
+		height:80%;
+		width:100%;
+		display:flex;
+		flex-direction: column;
+		justify-content:space-around;
+	}
+
+	.btn{
+		width:100%;
+	}
+
+	.submit:hover{
+		background-color: var(--buttonHover);
+	}
+
+
+	.otp-container{
+		position:absolute;
+		top:-70px;
+		height:100%;
+		width:100%;
+		display:flex;
+		flex-direction: column;
+		justify-content:space-evenly;
+		background-color: white;
+		z-index: 10;
+	}
+
+	.modal-container{
+		height:100%;
+		width:100%;
+		z-index:0;
+		overflow-y: scroll;
+	}
+	/* modal(popup) close button */
+	.close{
+		position:absolute;
+		top:65px;
+		right:8%;
+		cursor: pointer;
+		height: 22px;
+		width:22px;
+		z-index: 15;
+		color:rgb(175, 175, 169);
+	}
+
+
+	.back-button-otp{
+		position:absolute;
+		top:-30px;
+		cursor: pointer;
+		color:rgb(175, 175, 169);
+	}
+
+
+
+	.submit{
+		height:50px;
+		width:100%;
+		border:none;
+		background-color: var(--button);
+		color:white;
+		font-size: 17px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+
+/* around tablet to foldable screen */
+@media screen and (min-width: 550px) {
+  .main-container{
+		width:60%;
+		height:500px;
+	}
+	/* For the close button modal(popup) */
+	.close{
+		right:23%;
+	}
+	.back-button-otp{
+		top:-60px;
+	}
+	.label-container{
+		font-size: 1.3rem;
+	}
+}
+
+
+/* around tablet  screen */
+@media screen and (min-width: 850px) {
+	.main-container{
+	width:55%;
+	height:500px;
+	}
+	.logo{
+		font-size: 2rem;
+	}
+	.label-container{
+		font-size: 1.45rem;
+	}
+	.close{
+		right:25%;	
+	}
+}
+	
+
+/* around laptop  screen */
+@media screen and (min-width: 1200px) {
+	.main-container{
+	width:30%;
+	height:500px;
+	}
+	.close{	
+		right:36%;
+	}
+}
+

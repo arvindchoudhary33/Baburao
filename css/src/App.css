@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Spectral:wght@500&display=swap');
+:root{
+  --defaultThemeColor:#14213D;
+	--button: #14213D;
+  --buttonHover:#2b3958;
+  --navBar: #14213D;
+  --whiteColor: white;
+  --blackColor:black;
+  --foreGroundColor:white;
+
+}
+
+
+
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-image: url(//unsplash.it/1000/1000);
+  /* background-color: rgb(172, 223, 215); */
+}
+
+
+.pages {
+  color: #000000;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10%;
+}
